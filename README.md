@@ -25,3 +25,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
 https://api.jquery.com/
 
 https://getbootstrap.com/docs/5.1/getting-started/introduction/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions
