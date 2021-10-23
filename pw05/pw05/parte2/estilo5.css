@@ -1,0 +1,63 @@
+/*seletor por tag*/
+body{
+	background-color: black;	
+	color: white;
+	font-family: arial;
+}
+h1 {
+	color: orange;	
+}
+input, select, textarea, button 
+{
+	background-color: orange;	
+	color: white;
+	border: solid 2px white;
+	margin: 5px;
+}
+/*seletor por id*/
+#msg {
+	background-color: gray;	
+	width: 30%;
+	vertical-align: middle;
+}
+/*seletor por apelido/classe */
+.btn {
+	background-color: magenta;	
+	width: 20%;
+	height: 40px;
+	border-radius: 10px 0px 10px 0px;
+}
+
+label {
+	width: 20%;	
+	display: inline-table;
+	text-align: right;
+}
+
+@media screen and (max-width: 420px) and (min-width: 0px){
+	body{margin: 0px;}
+	
+	form {
+		width: 100%;
+		margin: 0px;
+		box-sizing: border-box;
+		background-color: gray;
+	}
+	
+	input, select, textarea, button , #msg, .btn
+	{
+		width: 100%;		
+		box-sizing: border-box;
+		margin: 5px 0px 5px 0px;
+	}
+	
+	label {
+		width: 100%;	
+		display: inline-table;
+		text-align: left;
+	}	
+	
+}
+
+
+

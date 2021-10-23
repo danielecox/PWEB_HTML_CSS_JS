@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+	<head> 
+		<title>Atividade PW06</title>
+	</head>
+	<body>
+	<font color="red" size="14px">Contato</font>
+	<br/><br/><i>Seja bem vindo, preencha o <b>formulário</b>
+	abaixo para:</i> 	<br/>
+		<ul>
+			<li>duvidas</li>
+			<li>sugestões</li>
+			<li>criticas</li>
+			<li>Orçamentos</li>
+		</ul>
+		Caso queira ver nossos produtos, clique
+		<a href="produtos.pdf">aqui</a>
+		<br/><br/>	
+	<form>
+	nome:<input type="text" id="txtNome" size="50" maxlength="45"
+	placeholder="digite seu nome" required /><br/>
+	email:<input type="email" id="txtEmail" size="60" placeholder="digite seu email" maxlength="55" required /><br/>
+	telefone:<input type="text" id="txtTelefone" size="30" placeholder="digite seu telefone" required pattern="[0-9]{4,5}-[0-9]{4}" title="Informe um telefone no formato 99999-9999"  /><br/>
+	assunto:<select id="assunto">
+			<option value="1">Duvidas</option>
+			<option value="2">sugestões</option>
+			<option value="3">Criticas</option>
+			<option value="4">orçamentos</option>
+			</select><br/>
+	Deseja receber uma copia deste e-mail:
+	<input type="radio" id="Op1" name="receber" />
+	Sim
+	<input type="radio" id="Op2" name="receber" />
+	Não <br/>
+	mensagem:
+	<textarea id="msg" rows="4" cols="40" required placeholder="digite sua mensagem"></textarea><br/>
+	<button id="bt1" type="button" onclick="validar();">Enviar</button>
+	</form>
+	</body>
+</html>
+<script lang="javascript">
+function validar(){
+	if(txtNome.value.length<4){
+		alert("informe um nome corretamente!");
+		txtNome.focus();
+		return false;
+	}
+	var regEmail = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+	
+	if(regEmail.test(txtEmail.value)==false){
+		alert("Informe um email corretamente !");
+		txtEmail.focus();
+		return false;
+	}
+	var regTelefone = /[0-9]{4,5}-[0-9]{4}/;
+	if(regTelefone.test(txtTelefone.value)==false){
+		alert("Informe um telefone correto !");
+		txtTelefone.focus();
+		return false;
+	}
+	if(Op1.checked==false && Op2.checked==false){
+		alert("Deseja receber uma copia de email ?");
+		return false;
+	}
+	if(msg.value.length <10){
+		alert("Preencha uma mensagem completa !");
+		msg.focus();
+		return false;
+	}
+	alert("tudo ok !");
+}
+</script>

@@ -1,0 +1,20 @@
+﻿Assunto: pw01
+
+1-Descreva as motivações para o desenvolvimento de aplicações baseadas em internet ?
+R- 	Disponibilidade - Disponivel em qualquer lugar a qualquer momento
+	Portabilidade - Independe de SW, HW e SO somente necessita de uma conexão
+	Segurança - Um ambiente de datacenter implementa um nivel de segurança maior
+	Configuração - Não necessita de instalação e nem updgrade
+	Integração - Com a soma dos itens anteriores e utiliza padrões abertos integrado 
+	sistema dos mais variados tipos
+	
+2-Quais as funções de um servidor de aplicação?
+R- Um servidor de aplicação e o principal elemente de uma aplicação web, pois:
+	- Armazena fisicamente as páginas e os arquivos
+	- Processa as requisições
+	- Gerencia as conexas ativas
+	- Implementa Segurança 
+
+3-Quais as diferenças de um página dinamica e uma página estatica
+R- Uma página estatica, dissemina o mesmo conteudo de forma similar para todos os clientes, não existe o envio de parametros.
+Enquanto uma pagina Dinamica, recebe parametros e processa as requisições no servidor de aplicação produzindo um conteudo personalizado a cada demanda. 
